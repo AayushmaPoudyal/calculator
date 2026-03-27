@@ -1,4 +1,12 @@
 <?php
+define('CALCULATOR_INCLUDED', true);
+ 
+include 'add.php';
+include 'subtract.php';
+include 'multiplication.php';
+include 'divide.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
