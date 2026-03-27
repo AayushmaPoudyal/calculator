@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator Dev 3</title>
+  <style>
+    body { text-align: center; font-family: sans-serif; }
+  </style>
+</head>
+<body>
+
+<h2>Calculator</h2>
+
+<input id="a" type="number">
+<select id="op">
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value=""></option>
+  <option value="/">/</option>
+</select>
+<input id="b" type="number">
+
+<button onclick="calculate()">=</button>
+
+<h3 id="res"></h3>
+
+<script>
+function calculate() {
+  let a = Number(document.getElementById("a").value);
+  let b = Number(document.getElementById("b").value);
+  let op = document.getElementById("op").value;
+
+  let result = eval(a + op + b);
+
+  document.getElementById("res").innerText = result;
+}
+</script>
+
+</body>
+</html>
